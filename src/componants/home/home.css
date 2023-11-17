@@ -1,0 +1,207 @@
+.home{
+    display: flex;
+    position: relative;
+    bottom: 400px;
+    left: 0px;
+    height: 260vh;
+    background-color:var(--lightColor);
+    color: var(--darkColor);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+.p-home{
+    width: 430px;
+}
+.text-home{
+    position: absolute;
+    left: 28px;
+    height: 30px;
+}
+.logo2{
+    position: absolute;
+    left: 770px;
+    width: 400px;
+    top: -100px;
+}
+.shop-btn{
+    font-size: 19px;
+    top: 290px;
+}
+.card-home{
+    position: absolute;
+    top: 76px;
+    display: flex;
+    column-gap: 3;
+    color: black;
+    width: 540px;
+}
+.offer-card{
+    background-color: rgb(220, 220, 220);
+}
+.best-products{
+    position: relative;
+    display:inline-flex;
+    inline-size: 320px;
+    gap: 15px;
+    top: 630px;
+    right: 160px;
+   min-width: 400%;
+    color: black;
+}
+.best-products img{
+    width: 200px;
+}
+.best-products p{
+    position: relative;
+    top: 240px;
+    right: 160px;
+   display:inline-block;
+}
+.best-products .name{
+    min-width: 130px;
+}
+.best-products .last{
+    position: relative;
+    top: 300px;
+    right: 280px;
+    color: rgb(133, 133, 133);
+    text-decoration: line-through;
+}
+.best-products .priceb{
+    position: relative;
+    top: 330px;
+    right: 350px;
+    color: var(--darkColor);
+}
+.best-products .q3, .best-products .a3{
+    position: relative;
+    top: 320px;
+    right: 260px;
+}
+.best-products .a3{
+    position: relative;
+    right:326px ;
+    top: 350px;
+}
+.best-products big{
+    position: relative;
+    bottom: 220px;
+    left: 680px;
+    min-width: 170px;
+    display: inline;
+}
+@media (max-width:985px) {
+    .home{
+        position: relative;
+        bottom: 550px;
+        font-size: 16;
+    }
+    .home .p-home{
+        width: 200px;
+    }
+    .home .text-home{
+        position: relative;
+        left: -28px;
+    }
+    .card-home{
+        position: relative;
+        display: inline-flex;
+        top: 160px;
+        right: 40px;
+    }
+    .shop-btn{
+        font-size: 19px;
+        top: 740px;
+        left: 20px;
+    }
+    .quick{
+        position: relative;
+        top: 170px;
+        right: 350px;
+    }
+    .best-products{
+        position: relative;
+        right: 270px;
+       display: block;
+    }
+     .delivery{
+        position: relative;
+        right: 190px;
+        top: 340px;
+    }
+    .best-products .name,.best-products .last,.best-products .priceb{
+        position: relative;
+        right: 700px;
+    }
+    .best-products .priceb{
+        position: relative;
+        right: 750px;
+    }
+    .best-products .name{
+        position: relative;
+        right: 620px;
+    }
+    .best-products big{
+        position: relative;
+        bottom: 80px;
+       left: 190px;
+    }
+    .best-products img{
+        position: relative;
+        top: 230px;
+        left: 300px;
+    }
+    .all-btn{
+        position: relative;
+        left: -800px;
+        width: 180px;
+    }
+}
+.all-btn{
+    position: relative;
+    right: 940px;
+    min-width: 120px;
+    height: 50px;
+    top: 440px;
+    border-radius: 15px;
+    font-size: 18px;
+    padding-top: 10px;
+    z-index: 1;
+    transition: 0.6s;
+}
+.all-btn::before{
+    content: "";
+    position:absolute;
+    background: rgb(255, 145, 0);
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    transform: rotate(-180deg);
+    border-radius: 15px;
+    right: 0px;
+    bottom: 0px;
+    transition: 0.6s;
+}
+.all-btn:hover::before{
+   width: 100%;
+}
+.up{
+    position: fixed; 
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 500px;
+    padding-top: 10px; 
+    padding-left: 7px;
+    left: 1200px;
+    background-color: blueviolet;
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+    z-index: 20;
+    display: none;
+}

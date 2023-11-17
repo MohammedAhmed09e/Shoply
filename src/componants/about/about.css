@@ -1,0 +1,101 @@
+.about{
+    position: relative;
+    bottom: 440px;
+    height: 150vh;
+    background-color: var(--lightColor);
+}
+.about h1{
+    position: relative;
+    top: 40px;
+    right:500px;
+    font-size: 23px;
+}
+.about p{
+    position: relative;
+    width: 560px;
+    top: 60px;
+}
+.about input[type=radio]{
+    display: none;
+}
+.star{
+    position: relative;
+    top: 100px;
+}
+.about h3{
+    position: relative;
+    top: 80px;
+    right: 0px;
+}
+.about span{
+    position: relative;
+    top: 120px;
+    right: 0px;
+    display: none;
+}
+.about .visit-spr{
+    position: relative;
+    left: 380px;
+    bottom: 100px;
+}
+.link-prayer{
+    text-decoration: underline;
+
+}
+.location-text{
+    position: relative;
+    left: 350px;
+    bottom: 260px;
+    font-size: 23px;
+}
+.location-text .loc-ic{
+    position: relative;
+    left: 460px;
+    top: 30px;
+}
+@media (max-width:985px){
+    .about{
+        position: relative;
+        bottom: 650px;
+        left: -120px;
+    }
+    .about p{
+        position: relative;
+        left: 120px;
+        width: 190px;
+    }
+    .about .location-text{
+        position: relative;
+        left: 10px;
+        top: 300px;
+        font-size: 16px;
+    }
+    .about .loc-ic{
+        position: relative;
+        left: 180px;
+        top: -10px;
+        font-size: 16px;
+    }
+    .about .visit-spr{
+        position: relative;
+        left: 130px;
+        top: 340px;
+        font-size: 13px;
+        width: 150px;
+    }
+    .pra-ti{
+        position: relative;
+        right: 580px;
+        bottom: 620px;
+    }
+    .select-pra{
+        position: relative;
+        left:340px;
+    }
+    .prayers{
+        position: relative;
+        display: block;
+        top: 200px;
+        right:-110%;
+    }
+}

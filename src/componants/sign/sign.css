@@ -1,0 +1,71 @@
+.sign{
+    position: relative;
+    bottom: 400px;
+    background-color:var(--lightColor);
+    color: var(--darkColor);
+    height: 400px;
+}
+.field input{
+    border: none;
+    background-color: transparent;
+    border-bottom:2px solid var(--darkColor);
+   
+}
+.sign h1{
+    position:absolute;
+    bottom: 450px;
+   left: 600px;
+   font-size: 25px;
+    background-color: rgba(6, 167, 41, 0.406);
+    border-radius: 14px;
+    width: 80px;
+}
+.sign h1::after{
+    content: "";
+    background: blueviolet;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 45px;
+    left: 0px;
+}
+.sign button{
+    background-color: rgb(255, 140, 0);
+    border-radius: 20px;
+    width: 170px;
+}
+ .sign #log{
+    display: block;
+    position: relative;
+    background-color: rgb(255, 140, 0);
+    width: 170px;
+    border-radius: 20px;
+    left:550px;
+}
+.name-sign{
+    position: relative;
+    left: 520px;
+    top: 20px;
+}
+.sign p{
+    color: brown;
+}
+@media (max-width:985px){
+    .sign{
+        position: relative;
+        right: 120px;
+    }
+    .sign h1,.sign .name-sign{
+        position: relative;
+        left: 100px;
+    }
+    .sign h1{
+        position: relative;
+        left: 180px;
+        top: -60px;
+    }
+    .sign #log{
+        position: relative;
+        left: 130px;
+    }
+}

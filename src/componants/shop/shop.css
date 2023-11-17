@@ -1,0 +1,398 @@
+.shop{
+    position: relative;
+    bottom: 300px;
+    background-color:var(--lightColor);
+    transition: 0.6s;
+    z-index: 100;
+    scroll-behavior: smooth;
+
+}
+:root{
+  --lightColor: antiquewhite;
+  --darkColor:black;
+}
+.pro-h1{
+    color: blueviolet;
+    cursor:default;
+}
+.list {
+    text-align: center;
+    display:inline-block;
+    inline-size: 420px;
+    gap: 15px;
+}
+.list .iamg{
+   height: 180px;
+}
+.list .item {
+    box-shadow: 0px 20px 30px 6px rgba(0, 0, 0, 0.475);
+    margin-bottom: 50px;
+    margin-left: 20px;
+    height: 340px;
+}
+.list .item, .title, .price,.imag{
+    width: 180px;
+    background-color: rgb(9, 129, 250);
+}
+.price::after,.info-price::after{
+    content: "$";
+}
+.add,.add-info{
+    background-color: rgb(9, 255, 0);
+    border-radius: 14px;
+    width: 120px;
+}
+.more-info{
+    background-color: rgb(255, 0, 191);
+    border-radius: 14px;
+   width: 160px;
+}
+.info-f{
+    position:fixed;
+    background-color: brown;
+    width: 400px;
+    bottom: 110px;
+    left: 450px;
+}
+.iop{
+    position: relative;
+    width: 230px;
+    left: 90px;
+}
+.close{
+    position: relative;
+    left: 280px;
+    top: 10px;
+    cursor: pointer;
+}
+.filter{
+    position:absolute;
+    right: 960px;
+    background-color: white;
+    width: 300px;
+    top: -100px;
+    right: 100%;
+    transition: 0.6s;
+    height: 300px;
+    color: black;
+}
+.open-filter{
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+    left:0px;
+    transition: 0.6s;
+}
+.links{
+    cursor: pointer;  
+}
+.move{
+    right: 1000px;
+}
+.move-open{
+    position: relative;
+    left: 260px;
+    transition: 0.6s;
+}
+.close-filter{
+    position: absolute;
+    left: 150px;
+    bottom: 220px;
+    cursor: pointer;
+}
+.cart-icon{
+    position:absolute;
+    left: 60px;
+    top: 0;
+}
+.cart-text{
+    position: absolute;
+    left: 1050px;
+    top: -140px;
+    width: 80px;
+    cursor: pointer;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+.payments{
+    position: fixed;
+    background-color: #f200ffc6;
+    width: 600px;
+    left: 600px;
+    bottom: 100px;
+    z-index: 1000px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 460px;
+    display:none;
+}
+.payments .burin label{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    bottom: 20px;
+    left: 90px;
+}
+
+.payments .burin .num{
+    position: relative;
+    right: 18px;
+}
+.payments .icons{
+    position: relative;
+    width: 300px;
+    font-size: 40px;
+    left: 230px;
+}
+.payments input{
+    position: relative;
+    border-radius: 12px;
+    border: none;
+    width: 190px;
+    text-align: center;
+}
+.payments span{
+    position: relative;
+    bottom: 415px;
+    left: 217px;
+    font-size: 24px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.payments span:hover{
+    background-color: red;
+}
+.payments button{
+    border: none;
+    border-radius: 13px;
+    width: 70px;
+    margin-top: 30px;
+    background-color: darkorange;
+    font-size: 17px;
+    cursor: pointer;
+}
+.payments .res{
+    background-color: rgb(255, 197, 7);
+}
+.shop .nA{
+z-index: 140;
+position: static;
+
+}
+.shop .active{
+    position: static;
+    display: block;
+    z-index: 140;
+    left: 20px;
+}
+.shop .active::before{ 
+        content: "";
+        height: 30px;
+        right: 600px;
+        position: absolute;
+        background: rgb(121, 121, 121);
+        width: 30px;
+        border-radius: 40px;
+        z-index: 20;
+}
+.shop .cart{
+    position:static;
+    bottom:4100px ;
+    left: 1940px;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    color: black;
+    transition: 0.4s;
+    scroll-behavior: smooth;
+}
+.shop .open-cart{
+    position: relative;
+    left: 640px;
+}
+.shop .cai{
+    width: 100px;
+}
+.shop .cart-name,.shop .select-cart,.shop .remove-cart,.buy-cart,.price-cart,.toatalItem-cart{
+    position: relative;
+    bottom: 40px;
+    right: 80px;
+}
+.shop .text-cart{
+    color: var(--darkColor);
+}
+.shop .select-cart{
+    position: relative;
+    background-color: #838183c6;
+    right: 24px;
+   bottom: 20px;
+}
+.shop .remove-cart,.buy-cart,.toatalItem-cart{
+    position: relative;
+    right: -90px;
+    bottom: 110px;
+}
+.shop .toatalItem-cart{
+    position: relative;
+    right: -60px;
+    bottom: 110px;
+}
+.shop .buy-cart{
+    position: relative;
+    bottom: 90px;
+    right: -210px;
+    z-index: 200;
+}
+.shop .remove-cart{
+    position: relative;
+    bottom: 90px;
+    right: -160px;
+    z-index: 200;
+}
+.shop .cart-count{
+    display: block;
+    position: relative;
+    background-color: rgb(122, 120, 118);
+    border-radius: 23px;
+    width: 30px;
+    bottom: 160px;
+    left: 1120px;
+}
+.shop .ic-close{
+    display: none;
+}
+/* .shop .text-cart{
+    
+} */
+@media (max-width:985px){
+    .cart-text{
+        position: relative;
+        left: -90px;
+        top: 10px;
+    }
+   .shop .cart{
+        position: relative;
+        left: 0px;
+        display: block;
+        width: 297px;
+        bottom:0px;
+    }
+    .shop .cart-name,.shop .select-cart,.shop .remove-cart,.shop .buy-cart,.shop .price-cart,.shop .toatalItem-cart{
+        position: relative;
+        top: 20px;
+} 
+.shop .pro-h1{
+    position: relative;
+    left: -90px;
+}
+.cart img{
+    position: relative;
+    left: 60px;
+    bottom: 20px;
+}
+.shop .select-cart{
+    position: relative;
+    top: -30px;
+    right: -40px;
+}
+.shop .cart-name{
+    position: relative;
+    right: 50px;
+    top: -20px;
+}
+.shop .remove-cart,.shop .buy-cart,.shop .price-cart,.shop .toatalItem-cart{
+    position: relative;
+    top: -20px;
+}
+.shop .remove-cart,.shop .buy-cart,.shop .toatalItem-cart{
+    position: relative;
+    top: -130px;
+    right: -10px;
+    padding: 20px;
+}
+.shop .remove-cart,.shop .buy-cart{
+    position: relative;
+    top: 20px;
+    right: 70px;
+}
+.move{
+    position: relative;
+    right: 0px; 
+}
+.info-f{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 500px;
+    display: none;
+}
+.info-f .des{
+    position: relative;
+    left: 100px;
+    width: 120px;
+}
+.info-f img{
+    position: relative;
+    right: 70px;
+}
+.close{
+    position: relative;
+    left: 170px;
+}
+.payments{
+    position: relative;
+    left: -200px;
+    top: 60px;
+    height: 600px;
+}
+.payments input{
+    /* display: block; */
+    position: relative;
+    left: -30px;
+    
+}
+.payments .num{
+    position: relative;
+    left: -50px;
+}
+.payments .card-num{
+    position: relative;
+    left: 0px;
+}
+.payments .y-num{
+    position: relative;
+    left: -2px;
+}
+.payments .c-num{
+    position: relative;
+    top: 50px;
+    left: -190px;
+}
+.payments .m-num{
+    position: relative;
+    top: 100px;
+    left: 190px;
+}
+.payments .send ,.payments .res{
+    position: relative;
+    top: 120px;
+}
+}
+.up{
+    position: fixed; 
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 500px;
+    padding-top: 15px; 
+    padding-left: 12px;
+    left: 1200px;
+    background-color: blueviolet;
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+    z-index: 20;
+    display: none;
+}

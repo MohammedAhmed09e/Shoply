@@ -1,0 +1,262 @@
+.nav{
+    display: flex;
+    background-color:var(--lightColor);
+    color: var(--darkColor);
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+    transition: 0.4s;
+}
+/* nav ul{
+    position: fixed;
+    z-index: 200;
+    left: 340px;
+} */
+/* nav ul::after{
+    content: "";
+    position: absolute;
+    width: 240%;
+    background: transparent;
+    box-shadow: 2px 1px 1px 1px rgba(119, 117, 117, 0.475);
+    height: 1px;
+    left: -340px;
+    z-index: 300;
+    bottom: 280px;
+} */
+:root{
+    --lightColor:antiquewhite;
+    --darkColor:black;
+}
+.dark-theme{
+    --lightColor:black;
+    --darkColor:white;
+}
+nav ul .a{
+    position: relative;
+    margin: 30px;
+    text-decoration: none;
+    color: var(--darkColor);
+    right: -370px;
+    bottom: 280px;
+    display: inline-block;
+    transition-duration: 700ms;
+}
+nav ul .a:hover::after{
+    content: "";
+    width: 100%;
+    background:red;
+    height: 2px;
+    position: absolute;
+    top: 40px;
+    right: 1px;
+    transition-duration: 700ms;
+  }
+.nav .active{
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 700ms;
+}
+.nav .active::after{
+    content: "";
+    width: 100%;
+    background:red;
+    height: 2px;
+    position: absolute;
+    top: 40px;
+    right: 1px;
+    transition-duration: 700ms;
+  }
+.logo{
+    position: relative;
+    width: 260px;
+    border: none;
+    bottom: 90px;
+}
+.ic{
+    position: relative;
+    bottom: 1px;
+    left: 15px;
+}
+#dark , #light{
+    position: relative;
+    left: 1000px;
+    bottom: 220px;
+    cursor: pointer;
+}
+#light{
+    position: relative;
+   
+    display: none;
+}
+.bars,.cancel{
+    display: none;
+}
+@media (max-width:985px){
+    .bars,.cancel{
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 180px;
+        justify-content: center;
+        font-size: 20px;
+        top: 60px;
+        cursor: pointer;
+        columns: auto;
+    }
+    .cancel{
+        display: none;
+    }
+    
+    nav ul .a{
+        position: relative;
+        display: none;
+       left: 20px;
+       top: -190px;
+       z-index: 400;
+       background:azure;
+    }
+     .ma::after{
+        content: "";
+        width: 46.5%;
+        background:azure;
+        height: 300px;
+        position: absolute;
+        top: 195px;
+        right: 180px;
+        z-index: 300;
+      }
+      .logo{
+
+        position: relative;
+        right: 70px;
+      }
+}
+/* @media (max-width:1048px){
+    #dark,#light{
+        position: relative;
+  
+    }
+    .cancel{
+        display: none;
+    }
+    #home,#about,#sign,#contact,#shop{
+        position: relative;
+        right: 200px;
+        font-size: 7px;
+       bottom: -1200px;
+}
+.logo{
+    width: 100px;
+}
+}
+@media (max-width:985px){
+    .bars,.cancel{
+        display: block;
+        align-items: center;
+        position: relative;
+        left: 850px;
+        justify-content: center;
+        font-size: 20px;
+        top: 40px;
+        cursor: pointer;
+        columns: auto;
+    }
+
+    .cancel{
+        display: none;
+    }
+    .a{ 
+       position: relative;
+    }
+    ul li{
+        display: none;
+    }
+    #sign,#contact {
+        position: relative;
+        display: none ;
+       
+    }
+    #home,#about,#sign,#contact,#shop{
+        display: none;
+        position: relative;
+        
+    }
+}
+@media (max-width:853px){
+    .bars,.cancel{
+        position: relative;
+        left: 700px;
+    }
+    .cancel{
+        display: none;
+    }
+    #home,#about,#sign,#contact,#shop{
+        display: none;
+        position: relative;
+        left: 400px;
+    }
+}
+@media (max-width:700px){
+    .bars,.cancel{
+        position: relative;
+        left: 400px;
+    }
+    .cancel{
+        display: none;
+    }
+    #home,#about,#sign,#contact,#shop{
+        display: none;
+        position: relative;
+        left: 110px;
+    }
+    
+}
+@media (max-width:455px){
+    .bars,.cancel{
+        position: relative;
+        left: 200px;
+    }
+    .cancel{
+        display: none;
+    }
+    #home,#about,#sign,#contact,#shop{
+        display: none;
+        position: relative;
+        left: 10px;
+        top: 0px;
+        font-size: 10px;
+    }
+    .active::after{
+        width: 20%;
+        left: 124px;
+    }
+}
+@media (max-width:955px){
+    .bars,.cancel{
+        position: relative;
+        left: 400px;
+    }
+    .cancel{
+        display: none;
+    }
+    #home,#about,#sign,#contact,#shop{
+        display: none;
+        position: relative;
+        left: 10px;
+        top: -70px;
+        font-size: 14px;
+    }
+    .logo{
+        position: relative;
+        bottom: 50px;
+    }
+    .active::after{
+        width: 6%;
+        left: 357px;
+    }
+    .ic{
+        position: relative;
+        left: 370px;
+    }
+} */
